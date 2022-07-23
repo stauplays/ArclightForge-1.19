@@ -19,19 +19,19 @@ public class EntityTypes {
     public static final RegistryObject<EntityType<AngelEntity>> ANGEL =
             ENTITY_TYPES.register("angel",
                     () -> EntityType.Builder.of(AngelEntity::new, MobCategory.CREATURE)
-                            .sized(0.8f, 0.6f)
+                            .sized(1.0f, 2.0f)
                             .build(new ResourceLocation(ArclightMod.MODID, "raccoon").toString()));
 
     public static final RegistryObject<EntityType<JellyfishEntity>> JELLY =
             ENTITY_TYPES.register("jelly",
                     () -> EntityType.Builder.of(JellyfishEntity::new, MobCategory.CREATURE)
-                            .sized(0.8f, 0.6f)
+                            .sized(0.5f, 1.0f)
                             .build(new ResourceLocation(ArclightMod.MODID, "jelly").toString()));
 
     public static final RegistryObject<EntityType<ScorpionEntity>> SCORPION =
             ENTITY_TYPES.register("scorpion",
                     () -> EntityType.Builder.of(ScorpionEntity::new, MobCategory.CREATURE)
-                            .sized(0.8f, 0.6f)
+                            .sized(3.0f, 2.5f)
                             .build(new ResourceLocation(ArclightMod.MODID, "scorpion").toString()));
 
 

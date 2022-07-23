@@ -11,6 +11,8 @@ import net.verox.arclight.entity.client.armor.HolyKnightArmorRenderer;
 import net.verox.arclight.entity.client.armor.MoonlightArmorRenderer;
 import net.verox.arclight.entity.mob.EntityTypes;
 import net.verox.arclight.entity.mob.custom.AngelEntity;
+import net.verox.arclight.entity.mob.custom.JellyfishEntity;
+import net.verox.arclight.entity.mob.custom.ScorpionEntity;
 import net.verox.arclight.item.custom.ArclightArmorItem;
 import net.verox.arclight.item.custom.HolyKnightArmorItem;
 import net.verox.arclight.item.custom.MoonlightArmorItem;
@@ -28,5 +30,7 @@ public class ModEventClientBusEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(EntityTypes.ANGEL.get(), AngelEntity.setAttributes());
+        event.put(EntityTypes.JELLY.get(), JellyfishEntity.setAttributes());
+        event.put(EntityTypes.SCORPION.get(), ScorpionEntity.setAttributes());
     }
 }

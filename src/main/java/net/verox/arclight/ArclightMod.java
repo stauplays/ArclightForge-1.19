@@ -14,6 +14,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.verox.arclight.block.ModBlocks;
 import net.verox.arclight.entity.mob.EntityTypes;
 import net.verox.arclight.entity.mob.client.AngelRenderer;
+import net.verox.arclight.entity.mob.client.JellyfishRenderer;
+import net.verox.arclight.entity.mob.client.ScorpionRenderer;
+import net.verox.arclight.entity.mob.custom.JellyfishEntity;
 import net.verox.arclight.item.ModItems;
 import net.verox.arclight.world.biomemods.ModBiomeModifiers;
 import net.verox.arclight.world.feature.ModConfiguredFeatures;
@@ -59,6 +62,8 @@ public class ArclightMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(EntityTypes.ANGEL.get(), AngelRenderer::new);
+            EntityRenderers.register(EntityTypes.JELLY.get(), JellyfishRenderer::new);
+            EntityRenderers.register(EntityTypes.SCORPION.get(), ScorpionRenderer::new);
         }
     }
 }
