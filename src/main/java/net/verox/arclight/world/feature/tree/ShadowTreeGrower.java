@@ -11,6 +11,6 @@ public class ShadowTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pLargeHive) {
-        return ModConfiguredFeatures.SHADOW_TREE;
+        return ModConfiguredFeatures.SHADOW_TREE.getHolder().get();
     }
 }

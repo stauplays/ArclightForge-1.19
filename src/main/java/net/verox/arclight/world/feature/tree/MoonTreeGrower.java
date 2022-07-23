@@ -11,6 +11,6 @@ public class MoonTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pLargeHive) {
-        return ModConfiguredFeatures.MOON_TREE;
+        return ModConfiguredFeatures.MOON_TREE.getHolder().get();
     }
 }

@@ -11,6 +11,6 @@ public class JadeTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pLargeHive) {
-        return ModConfiguredFeatures.JADE_TREE;
+        return ModConfiguredFeatures.JADE_TREE.getHolder().get();
     }
 }
