@@ -34,9 +34,8 @@ public class ArclightMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        ModPlacedFeature.register(modEventBus);
         ModBiomeModifiers.register(modEventBus);
-        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeature.register(modEventBus);
 
         EntityTypes.register(modEventBus);
 
@@ -58,8 +57,6 @@ public class ArclightMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MOON_LEAVES.get(), RenderType.translucent());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MOON_LEAVES.get(), RenderType.cutout());
             EntityRenderers.register(EntityTypes.ANGEL.get(), AngelRenderer::new);
         }
     }

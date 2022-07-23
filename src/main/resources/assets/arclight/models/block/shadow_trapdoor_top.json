@@ -2,5 +2,6 @@
   "parent": "minecraft:block/template_trapdoor_top",
   "textures": {
     "texture": "arclight:block/shadow_trapdoor"
-  }
+  },
+  "render_type": "cutout"
 }

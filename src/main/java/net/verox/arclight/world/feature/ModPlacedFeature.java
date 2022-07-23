@@ -20,8 +20,9 @@ public class ModPlacedFeature {
 
     public static final RegistryObject<PlacedFeature> MOON_PLACED = PLACED_FEATURES.register("moon_placed",
             () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>) (Holder<? extends ConfiguredFeature<?,?>>)
-            ModConfiguredFeatures.MOON_SPAWN, VegetationPlacements.treePlacement(
+                    ModConfiguredFeatures.MOON_SPAWN, VegetationPlacements.treePlacement(
                     PlacementUtils.countExtra(3, 0.1f, 2))));
+
 
     public static final RegistryObject<PlacedFeature> JADE_PLACED = PLACED_FEATURES.register("jade_placed",
             () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>) (Holder<? extends ConfiguredFeature<?,?>>)
@@ -32,8 +33,6 @@ public class ModPlacedFeature {
             () -> new PlacedFeature((Holder<ConfiguredFeature<?,?>>) (Holder<? extends ConfiguredFeature<?,?>>)
                     ModConfiguredFeatures.SHADOW_SPAWN, VegetationPlacements.treePlacement(
                     PlacementUtils.countExtra(3, 0.1f, 2))));
-
-
 
     public static final RegistryObject<PlacedFeature> ARCLIGHT_ORE_PLACED = PLACED_FEATURES.register("arclight_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.OVERWORLD_ARCLIGHT_ORE.getHolder().get(),

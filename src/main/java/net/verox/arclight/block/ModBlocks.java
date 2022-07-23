@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.verox.arclight.ArclightMod;
+import net.verox.arclight.block.custom.ModRotatedPillarBlock;
 import net.verox.arclight.block.custom.ModSaplingBlock;
 import net.verox.arclight.block.custom.ModStairsBlock;
 import net.verox.arclight.item.ModItems;
@@ -69,19 +70,19 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> MOON_LOG = registerBlock("moon_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> MOON_WOOD = registerBlock("moon_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> STRIPPED_MOON_LOG = registerBlock("stripped_moon_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> STRIPPED_MOON_WOOD = registerBlock("stripped_moon_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> MOON_PLANKS = registerBlock("moon_planks",
@@ -113,19 +114,19 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> JADE_LOG = registerBlock("jade_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> JADE_WOOD = registerBlock("jade_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> STRIPPED_JADE_LOG = registerBlock("stripped_jade_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> STRIPPED_JADE_WOOD = registerBlock("stripped_jade_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> JADE_PLANKS = registerBlock("jade_planks",
@@ -157,19 +158,19 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> SHADOW_LOG = registerBlock("shadow_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> SHADOW_WOOD = registerBlock("shadow_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> STRIPPED_SHADOW_LOG = registerBlock("stripped_shadow_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> STRIPPED_SHADOW_WOOD = registerBlock("stripped_shadow_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
     public static final RegistryObject<Block> SHADOW_PLANKS = registerBlock("shadow_planks",

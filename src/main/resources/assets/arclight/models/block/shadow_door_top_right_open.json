@@ -3,5 +3,6 @@
   "textures": {
     "bottom": "arclight:block/shadow_door_bottom",
     "top": "arclight:block/shadow_door_top"
-  }
+  },
+  "render_type": "cutout"
 }
