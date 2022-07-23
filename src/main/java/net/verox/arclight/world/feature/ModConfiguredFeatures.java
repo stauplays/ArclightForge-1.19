@@ -19,6 +19,7 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlac
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.verox.arclight.ArclightMod;
@@ -40,11 +41,11 @@ public class ModConfiguredFeatures  {
 
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> OVERWORLD_ARCLIGHT_ORE = CONFIGURED_FEATURES.register("overworld_arclight_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ARCLIGHT_ORE.get().defaultBlockState(),7)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ARCLIGHT_ORE.get().defaultBlockState(),3)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> END_JADE_ORE = CONFIGURED_FEATURES.register("end_jade_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(new BlockMatchTest(Blocks.END_STONE), ModBlocks.JADE_ORE.get().defaultBlockState(),7)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(new BlockMatchTest(Blocks.END_STONE), ModBlocks.JADE_ORE.get().defaultBlockState(),3)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> NETHER_MOONLIGHT_ORE = CONFIGURED_FEATURES.register("nether_moonlight_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.MOONLIGHT_ORE.get().defaultBlockState(),7)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.MOONLIGHT_ORE.get().defaultBlockState(),3)));
 
     public static final RegistryObject<ConfiguredFeature<?,?>> MOON_TREE = CONFIGURED_FEATURES.register("moon_tree", () -> new ConfiguredFeature<>(Feature.TREE,
             new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.MOON_LOG.get()),
@@ -67,4 +68,8 @@ public class ModConfiguredFeatures  {
                     new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0),4),
                     new TwoLayersFeatureSize(1,0,2)).build()));
 
+
+    public static void register(IEventBus eventBus) {
+        CONFIGURED_FEATURES.register(eventBus);
+    }
 }

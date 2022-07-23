@@ -1,9 +1,9 @@
 {
-  "feature": "arclight:jade",
+  "feature": "arclight:jade_tree",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 1
+      "chance": 50
     },
     {
       "type": "minecraft:in_square"

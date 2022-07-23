@@ -1,5 +1,6 @@
 package net.verox.arclight.block.custom;
 
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -35,9 +36,10 @@ public class ModRotatedPillarBlock extends RotatedPillarBlock {
 
 
     @Nullable
-    public BlockState getToolModifiedState(BlockState state, Level level, BlockPos pos, Player player,
-                                           ItemStack stack, ToolAction toolAction) {
-        if(stack.getItem() instanceof AxeItem) {
+    @Override
+    public BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
+        ItemStack itemStack = context.getItemInHand();
+        if(itemStack.getItem() instanceof AxeItem) {
             if(state.is(ModBlocks.MOON_LOG.get())) {
                 return ModBlocks.STRIPPED_MOON_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
@@ -58,6 +60,6 @@ public class ModRotatedPillarBlock extends RotatedPillarBlock {
             }
         }
 
-        return getToolModifiedState(state, level, pos, player, stack, toolAction);
+        return super.getToolModifiedState(state, context, toolAction, simulate);
     }
 }

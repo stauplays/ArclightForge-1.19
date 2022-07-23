@@ -36,6 +36,7 @@ public class ArclightMod
 
         ModBiomeModifiers.register(modEventBus);
         ModPlacedFeature.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
 
         EntityTypes.register(modEventBus);
 

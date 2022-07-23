@@ -41,18 +41,15 @@ public class ModPlacedFeature {
                     BiomeFilter.biome())));
 
     public static final RegistryObject<PlacedFeature> ARCLIGHT_ORE_PLACED = PLACED_FEATURES.register("arclight_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.OVERWORLD_ARCLIGHT_ORE.getHolder().get(),
-                    commonOrePlacement(3, // VeinsPerChunk
+            () -> new PlacedFeature(ModConfiguredFeatures.OVERWORLD_ARCLIGHT_ORE.getHolder().get(), commonOrePlacement(3, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(74), VerticalAnchor.aboveBottom(94)))));
 
     public static final RegistryObject<PlacedFeature> JADE_ORE_PLACED = PLACED_FEATURES.register("jade_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.END_JADE_ORE.getHolder().get(),
-                    commonOrePlacement(3, // VeinsPerChunk
+            () -> new PlacedFeature(ModConfiguredFeatures.END_JADE_ORE.getHolder().get(), commonOrePlacement(3, // VeinsPerChunk
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(40)))));
 
     public static final RegistryObject<PlacedFeature> MOONLIGHT_ORE_PLACED = PLACED_FEATURES.register("moonlight_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.NETHER_MOONLIGHT_ORE.getHolder().get(),
-                    commonOrePlacement(3, // VeinsPerChunk
+            () -> new PlacedFeature(ModConfiguredFeatures.NETHER_MOONLIGHT_ORE.getHolder().get(), commonOrePlacement(3, // VeinsPerChunk
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(120)))));
 
 
