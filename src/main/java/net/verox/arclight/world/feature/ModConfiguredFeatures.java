@@ -39,6 +39,11 @@ public class ModConfiguredFeatures  {
     public static final Supplier<List<OreConfiguration.TargetBlockState>> NETHER_MOONLIGHT_ORES = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.MOONLIGHT_ORE.get().defaultBlockState())));
 
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_CLOUDSTONES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CLOUDSTONE.get().defaultBlockState())));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> OVERWORLD_CLOUDSTONE = CONFIGURED_FEATURES.register("overworld_cloudstone",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CLOUDSTONE.get().defaultBlockState(),37)));
+
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> OVERWORLD_ARCLIGHT_ORE = CONFIGURED_FEATURES.register("overworld_arclight_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ARCLIGHT_ORE.get().defaultBlockState(),3)));
