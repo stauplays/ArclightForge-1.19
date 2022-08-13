@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "J": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "A": {
+      "item": "minecraft:dragon_breath"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "JAJ",
+    "ANA",
+    "JAJ"
+  ],
+  "result": {
+    "item": "arclight:scorpion_scale"
+  }
+}
