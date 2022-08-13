@@ -72,22 +72,22 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.ALMANDINE,-4,0f, new Item.Properties().tab(ModCreativeModeTab.ARCLIGHT_TAB)));
 
     public static final RegistryObject<Item> ARCLIGHT_CORE = ITEMS.register("arclight_core",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> MOONLIGHT_CORE = ITEMS.register("moonlight_core",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> SHADOW_CORE = ITEMS.register("shadow_core",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> FROSTED_CORE = ITEMS.register("frosted_core",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> ANGEL_SPAWN = ITEMS.register("angel_spawn",
-            () -> new AngelSpawnItem(new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
+            () -> new AngelSpawnItem(new Item.Properties().tab(ModCreativeModeTab.MOB_TAB).durability(1).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> HEART = ITEMS.register("heart",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> ARCLIGHT_GEM = ITEMS.register("arclight_gem",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));
@@ -196,16 +196,16 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(EntityTypes.ANGEL, 0xE1EF05, 0x6FF2FA,new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
 
     public static final RegistryObject<Item> SCORPION_SCALE = ITEMS.register("scorpion_scale",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> ANGEL_FEATHER = ITEMS.register("angel_feather",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> ANGEL_SWORD = ITEMS.register("angel_sword",
-            () -> new AngelSwordItem(ModToolTiers.ARCLIGHT, 7, -2.4f, new Item.Properties().tab(ModCreativeModeTab.ARCLIGHT_TAB)));
+            () -> new AngelSwordItem(ModToolTiers.ARCLIGHT, 7, -2.4f, new Item.Properties().tab(ModCreativeModeTab.ARCLIGHT_TAB).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> MOONLIGHT_GLAIVE = ITEMS.register("moonlight_glaive",
-            () -> new MoonlightGlaiveItem(ModToolTiers.ARCLIGHT, 6, -3.0f, new Item.Properties().tab(ModCreativeModeTab.ARCLIGHT_TAB)));
+            () -> new MoonlightGlaiveItem(ModToolTiers.ARCLIGHT, 6, -3.0f, new Item.Properties().tab(ModCreativeModeTab.ARCLIGHT_TAB).rarity(Rarity.RARE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

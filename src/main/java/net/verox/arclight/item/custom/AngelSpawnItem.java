@@ -26,7 +26,7 @@ public class AngelSpawnItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
-        if(pContext.getLevel().isClientSide()) {
+        if(!pContext.getLevel().isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
             boolean foundBlock = false;
@@ -37,8 +37,7 @@ public class AngelSpawnItem extends Item {
                 if(isValuableBlock(blockBelow)) {
                     Level level = pContext.getLevel();
                     AngelEntity spawnAngel = EntityTypes.ANGEL.get().create(level);
-                    spawnAngel.refreshPositionAndAngles((double)positionClicked.getX() + 0.5D, (double)positionClicked.getY()
-                            + 15.05D, (double)positionClicked.getZ() + 0.5D, 0.0F, 0.0F);
+                    spawnAngel.setPos(positionClicked.getX() + 0, positionClicked.getY() + 15, positionClicked.getZ() + 0);
                     level.addFreshEntity(spawnAngel);
                     break;
                 }
