@@ -26,7 +26,7 @@ public class MoonlightArmorItem extends GeoArmorItem implements IAnimatable {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.MOONLIGHT, new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 0)).build();
+                    .put(ModArmorMaterials.MOONLIGHT, new MobEffectInstance(MobEffects.NIGHT_VISION, 500, 0, false, false)).build();
 
     public MoonlightArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
@@ -74,7 +74,7 @@ public class MoonlightArmorItem extends GeoArmorItem implements IAnimatable {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addEffect(new MobEffectInstance(mapStatusEffect.getEffect(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
+                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier(), mapStatusEffect.isAmbient(), mapStatusEffect.isVisible()));
 
             //if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
             //    player.getInventory().hurtArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});

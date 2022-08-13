@@ -1,6 +1,11 @@
 {
+  //Items:
   "item.arclight.arclight_gem": "Arclight Gem",
   "item.arclight.arclight_core": "Arclight Core",
+  "item.arclight.shadow_core": "Shadow Core",
+  "item.arclight.frosted_core": "Frozen Core",
+  "item.arclight.steel_core": "Steel Core",
+  "item.arclight.angel_feather": "Angel's Feather",
   "item.arclight.moonlight_core": "Moonlight Core",
   "item.arclight.jade_shard": "Jade Shard",
   "item.arclight.moonlight_crystal": "Moonlight Shard",
@@ -28,15 +33,24 @@
   "item.arclight.arclight_hoe": "Arclight Hoe",
   "item.arclight.arclight_sword": "Arclight Sword",
   "item.arclight.angel_spawn_egg": "Angel Spawn Egg",
-  "item.arclight.angel_spawn": "Arclight Crown [WIP]",
-  "item.arclight.jelly_spawn_egg": "Jellyfish Spawn Egg [WIP]",
-  "item.arclight.scorpion_spawn_egg": "Scorpion Spawn Egg [WIP]",
+  "item.arclight.angel_spawn": "Arclight Crown",
+  "item.arclight.jelly_spawn_egg": "Jellyfish Spawn Egg",
+  "item.arclight.scorpion_spawn_egg": "Scorpion Spawn Egg",
   "item.arclight.moonlight_jellyball": "Moonlight Jelly",
   "item.arclight.moonlight_crystalized": "Crystalized Jelly",
   "item.arclight.angel_sword": "Angel Sword",
-  "item.arclight.stinger": "Scorpion Stinger [WIP]",
-  "item.arclight.scorpion_scale": "Scorpion Scale [WIP]",
+  "item.arclight.heart": "Scorpion Heart",
+  "item.arclight.scorpion_scale": "Scorpion Scale",
+  "item.arclight.moonlight_glaive": "Moonlight Glaive",
+  "item.arclight.almandine_shard": "Almandine Shard",
+  "item.arclight.almandine_ingot": "Almandine-Copper Alloy",
+  "item.arclight.almandine_pickaxe": "Almandine Pickaxe",
+  "item.arclight.almandine_axe": "Almandine Axe",
+  "item.arclight.almandine_shovel": "Almandine Shovel",
+  "item.arclight.almandine_hoe": "Almandine Hoe",
+  "item.arclight.almandine_sword": "Almandine Sword",
 
+  //ArmorItems
   "item.arclight.arclight_helmet": "Arclight Paladin Helmet",
   "item.arclight.arclight_chestplate": "Arclight Paladin Chestplate",
   "item.arclight.arclight_leggings": "Arclight Paladin Leggings",
@@ -47,15 +61,45 @@
   "item.arclight.holyknight_leggings": "Holy Knight Leggings",
   "item.arclight.holyknight_boots": "Holy Knight Boots",
 
+  "item.arclight.shadow_helmet": "Shadow Paladin Helmet",
+  "item.arclight.shadow_chestplate": "Shadow Paladin Chestplate",
+  "item.arclight.shadow_leggings": "Shadow Paladin Leggings",
+  "item.arclight.shadow_boots": "Shadow Paladin Boots",
+
   "item.arclight.moonlight_helmet": "Moonlight Paladin Helmet",
   "item.arclight.moonlight_chestplate": "Moonlight Paladin Chestplate",
   "item.arclight.moonlight_leggings": "Moonlight Paladin Leggings",
   "item.arclight.moonlight_boots": "Moonlight Paladin Boots",
 
+  "item.arclight.scorpion_helmet": "Scorpion Scale Helmet",
+  "item.arclight.scorpion_chestplate": "Scorpion Scale Chestplate",
+  "item.arclight.scorpion_leggings": "Scorpion Scale Leggings",
+  "item.arclight.scorpion_boots": "Scorpion Scale Boots",
+
+  "item.arclight.frozen_helmet": "Frozen Knight Helmet",
+  "item.arclight.frozen_chestplate": "Frozen Knight Chestplate",
+  "item.arclight.frozen_leggings": "Frozen Knight Leggings",
+  "item.arclight.frozen_boots": "Frozen Knight Boots",
+
+  "item.arclight.steel_helmet": "Almandine Paladin Helmet",
+  "item.arclight.steel_chestplate": "Almandine Paladin Chestplate",
+  "item.arclight.steel_leggings": "Almandine Paladin Leggings",
+  "item.arclight.steel_boots": "Almandine Paladin Boots",
+
+  "item.arclight.angel_helmet": "Angel Helmet",
+  "item.arclight.angel_chestplate": "Angel Chestplate",
+  "item.arclight.angel_leggings": "Angel Leggings",
+  "item.arclight.angel_boots": "Angel Boots",
+
+  //Blocks:
   "block.arclight.arclight_ore": "Arclight Ore",
   "block.arclight.arclight_block": "Block of Arclight",
+  "block.arclight.jade_block": "Block of Jade",
+  "block.arclight.moonlight_block": "Block of Moonlight",
+  "block.arclight.almandine_block": "Block of Almandine",
   "block.arclight.moonlight_ore": "Moonlight Ore",
   "block.arclight.jade_ore": "Jade Ore",
+  "block.arclight.almandine_ore": "Almandine Ore",
   "block.arclight.cloudstone": "Cloudstone",
   "block.arclight.cloudstone_brick": "Cloudstone Brick",
   "block.arclight.cloudstone_cobbled": "Cobbled Cloudstone",
@@ -105,11 +149,15 @@
   "block.arclight.jade_trapdoor": "Jade Birch Trapdoor",
   "block.arclight.shadow_door": "Shadow Door",
   "block.arclight.shadow_trapdoor": "Shadow Trapdoor",
+  "block.arclight.boss_spawner": "Boss-Spawn Block",
+  "block.arclight.boss_spawner_nether": "Boss-Spawn Block Nether",
 
+  //Entity
   "entity.arclight.angel": "Arclight Angel",
   "entity.arclight.jelly": "Moonlight Jellyfish",
   "entity.arclight.scorpion": "Lava Scorpion",
 
+  //Groupname:
   "itemGroup.arclight_group": "Arclight",
   "itemGroup.arclight_mobs": "Arclight Mobs",
   "itemGroup.arclight_resources": "Arclight Resources",

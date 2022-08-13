@@ -34,6 +34,8 @@ public class ModConfiguredFeatures  {
 
     public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_ARCLIGHT_ORES = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ARCLIGHT_ORE.get().defaultBlockState())));
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_ALMANDINE_ORES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ALMANDINE_ORE.get().defaultBlockState())));
     public static final Supplier<List<OreConfiguration.TargetBlockState>> END_JADE_ORES = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.JADE_ORE.get().defaultBlockState())));
     public static final Supplier<List<OreConfiguration.TargetBlockState>> NETHER_MOONLIGHT_ORES = Suppliers.memoize(() -> List.of(
@@ -47,6 +49,9 @@ public class ModConfiguredFeatures  {
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> OVERWORLD_ARCLIGHT_ORE = CONFIGURED_FEATURES.register("overworld_arclight_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ARCLIGHT_ORE.get().defaultBlockState(),3)));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> OVERWORLD_ALMANDINE_ORE = CONFIGURED_FEATURES.register("overworld_almandine_ore",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ALMANDINE_ORE.get().defaultBlockState(),3)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> END_JADE_ORE = CONFIGURED_FEATURES.register("end_jade_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(new BlockMatchTest(Blocks.END_STONE), ModBlocks.JADE_ORE.get().defaultBlockState(),3)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> NETHER_MOONLIGHT_ORE = CONFIGURED_FEATURES.register("nether_moonlight_ore",

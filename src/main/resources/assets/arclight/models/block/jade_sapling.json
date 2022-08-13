@@ -2,6 +2,5 @@
   "parent": "minecraft:block/cross",
   "textures": {
     "cross": "arclight:block/jade_sapling"
-  },
-  "render_type": "cutout"
+  }
 }

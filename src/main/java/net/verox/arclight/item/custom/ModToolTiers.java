@@ -22,4 +22,8 @@ public class ModToolTiers {
     public static final ForgeTier COPPER = new ForgeTier(2, 250, 6.0f,
             2.0f, 14, BlockTags.NEEDS_IRON_TOOL,
             () -> Ingredient.of(Items.COPPER_INGOT));
+
+    public static final ForgeTier ALMANDINE = new ForgeTier(4, 2500, 12.0f,
+            4.5f, 24, BlockTags.NEEDS_DIAMOND_TOOL,
+            () -> Ingredient.of(ModItems.ALMANDINE_INGOT.get()));
 }

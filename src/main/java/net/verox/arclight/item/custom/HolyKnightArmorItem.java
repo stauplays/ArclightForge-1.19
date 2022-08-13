@@ -26,7 +26,7 @@ public class HolyKnightArmorItem extends GeoArmorItem implements IAnimatable {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.HOLYKNIGHT, new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1)).build();
+                    .put(ModArmorMaterials.HOLYKNIGHT, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, false)).build();
 
     public HolyKnightArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
@@ -74,7 +74,7 @@ public class HolyKnightArmorItem extends GeoArmorItem implements IAnimatable {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addEffect(new MobEffectInstance(mapStatusEffect.getEffect(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
+                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier(), mapStatusEffect.isAmbient(), mapStatusEffect.isVisible()));
 
             //if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
             //    player.getInventory().hurtArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});

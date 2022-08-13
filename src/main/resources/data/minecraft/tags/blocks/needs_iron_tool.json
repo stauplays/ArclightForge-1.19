@@ -2,6 +2,10 @@
   "values": [
     "arclight:moonlight_ore",
     "arclight:shadow_planks",
-    "#arclight:shadow_logs"
+    "#arclight:shadow_logs",
+    "arclight:arclight_block",
+    "arclight:almandine_block",
+    "arclight:moonlight_block",
+    "arclight:jade_block"
   ]
 }

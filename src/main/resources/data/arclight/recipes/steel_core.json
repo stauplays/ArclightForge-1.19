@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "J": {
+      "item": "minecraft:charcoal"
+    },
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "pattern": [
+    "JAJ",
+    "ANA",
+    "JAJ"
+  ],
+  "result": {
+    "item": "arclight:steel_core"
+  }
+}

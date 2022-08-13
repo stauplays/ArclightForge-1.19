@@ -231,9 +231,19 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.RESOURCES_TAB);
 
+    public static final RegistryObject<Block> ALMANDINE_ORE = registerBlock("almandine_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.RESOURCES_TAB);
+
     public static final RegistryObject<Block> ARMOR_FORGE = registerBlock("armor_forge",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
+
+    public static final RegistryObject<Block> BOSS_SPAWNER = registerBlock("boss_spawner",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)), ModCreativeModeTab.MOB_TAB);
+
+    public static final RegistryObject<Block> BOSS_SPAWNER_NETHER = registerBlock("boss_spawner_nether",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)), ModCreativeModeTab.MOB_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

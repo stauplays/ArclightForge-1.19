@@ -16,7 +16,6 @@ import net.verox.arclight.entity.mob.EntityTypes;
 import net.verox.arclight.entity.mob.client.AngelRenderer;
 import net.verox.arclight.entity.mob.client.JellyfishRenderer;
 import net.verox.arclight.entity.mob.client.ScorpionRenderer;
-import net.verox.arclight.entity.mob.custom.JellyfishEntity;
 import net.verox.arclight.item.ModItems;
 import net.verox.arclight.world.biomemods.ModBiomeModifiers;
 import net.verox.arclight.world.feature.ModConfiguredFeatures;
