@@ -34,13 +34,11 @@
   "item.arclight.arclight_sword": "Arclight Sword",
   "item.arclight.angel_spawn_egg": "Angel Spawn Egg",
   "item.arclight.angel_spawn": "Arclight Crown",
-  "item.arclight.jelly_spawn_egg": "Jellyfish Spawn Egg",
-  "item.arclight.scorpion_spawn_egg": "Scorpion Spawn Egg",
   "item.arclight.moonlight_jellyball": "Moonlight Jelly",
   "item.arclight.moonlight_crystalized": "Crystalized Jelly",
   "item.arclight.angel_sword": "Angel Sword",
-  "item.arclight.heart": "Scorpion Heart",
-  "item.arclight.scorpion_scale": "Scorpion Scale",
+  "item.arclight.heart": "Dragon Heart",
+  "item.arclight.scorpion_scale": "Dragon Scale",
   "item.arclight.moonlight_glaive": "Moonlight Glaive",
   "item.arclight.almandine_shard": "Almandine Shard",
   "item.arclight.almandine_ingot": "Almandine-Copper Alloy",
@@ -71,10 +69,10 @@
   "item.arclight.moonlight_leggings": "Moonlight Paladin Leggings",
   "item.arclight.moonlight_boots": "Moonlight Paladin Boots",
 
-  "item.arclight.scorpion_helmet": "Scorpion Scale Helmet",
-  "item.arclight.scorpion_chestplate": "Scorpion Scale Chestplate",
-  "item.arclight.scorpion_leggings": "Scorpion Scale Leggings",
-  "item.arclight.scorpion_boots": "Scorpion Scale Boots",
+  "item.arclight.scorpion_helmet": "Dragon Scale Helmet",
+  "item.arclight.scorpion_chestplate": "Dragon Scale Chestplate",
+  "item.arclight.scorpion_leggings": "Dragon Scale Leggings",
+  "item.arclight.scorpion_boots": "Dragon Scale Boots",
 
   "item.arclight.frozen_helmet": "Frozen Knight Helmet",
   "item.arclight.frozen_chestplate": "Frozen Knight Chestplate",
@@ -154,8 +152,6 @@
 
   //Entity
   "entity.arclight.angel": "Arclight Angel",
-  "entity.arclight.jelly": "Moonlight Jellyfish",
-  "entity.arclight.scorpion": "Lava Scorpion",
 
   //Groupname:
   "itemGroup.arclight_group": "Arclight",

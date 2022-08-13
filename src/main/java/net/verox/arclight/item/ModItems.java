@@ -84,7 +84,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));
 
     public static final RegistryObject<Item> ANGEL_SPAWN = ITEMS.register("angel_spawn",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
+            () -> new AngelSpawnItem(new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
 
     public static final RegistryObject<Item> HEART = ITEMS.register("heart",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
@@ -194,12 +194,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> ANGEL_SPAWN_EGG = ITEMS.register("angel_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityTypes.ANGEL, 0xE1EF05, 0x6FF2FA,new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
-
-    public static final RegistryObject<Item> JELLY_SPAWN_EGG = ITEMS.register("jelly_spawn_egg",
-            () -> new ForgeSpawnEggItem(EntityTypes.JELLY, 0x09B2D9, 0xD1EFF6,new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
-
-    public static final RegistryObject<Item> SCORPION_SPAWN_EGG = ITEMS.register("scorpion_spawn_egg",
-            () -> new ForgeSpawnEggItem(EntityTypes.SCORPION, 0x280404, 0xF89918,new Item.Properties().tab(ModCreativeModeTab.MOB_TAB)));
 
     public static final RegistryObject<Item> SCORPION_SCALE = ITEMS.register("scorpion_scale",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RESOURCES_TAB)));

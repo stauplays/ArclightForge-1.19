@@ -9,8 +9,6 @@ import net.verox.arclight.ArclightMod;
 import net.verox.arclight.entity.client.armor.*;
 import net.verox.arclight.entity.mob.EntityTypes;
 import net.verox.arclight.entity.mob.custom.AngelEntity;
-import net.verox.arclight.entity.mob.custom.JellyfishEntity;
-import net.verox.arclight.entity.mob.custom.ScorpionEntity;
 import net.verox.arclight.item.custom.*;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
@@ -31,7 +29,5 @@ public class ModEventClientBusEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(EntityTypes.ANGEL.get(), AngelEntity.setAttributes());
-        event.put(EntityTypes.JELLY.get(), JellyfishEntity.setAttributes());
-        event.put(EntityTypes.SCORPION.get(), ScorpionEntity.setAttributes());
     }
 }

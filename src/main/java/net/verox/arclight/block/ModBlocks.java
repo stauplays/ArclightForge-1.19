@@ -242,8 +242,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> BOSS_SPAWNER = registerBlock("boss_spawner",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)), ModCreativeModeTab.MOB_TAB);
 
-    public static final RegistryObject<Block> BOSS_SPAWNER_NETHER = registerBlock("boss_spawner_nether",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)), ModCreativeModeTab.MOB_TAB);
+    //public static final RegistryObject<Block> BOSS_SPAWNER_NETHER = registerBlock("boss_spawner_nether",
+    //        () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)), ModCreativeModeTab.MOB_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
