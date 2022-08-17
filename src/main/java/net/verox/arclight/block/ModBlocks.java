@@ -69,6 +69,18 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
 
+    public static final RegistryObject<Block> JADE_BLOCK = registerBlock("jade_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
+
+    public static final RegistryObject<Block> MOONLIGHT_BLOCK = registerBlock("moonlight_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
+
+    public static final RegistryObject<Block> ALMANDINE_BLOCK = registerBlock("almandine_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);
+
     public static final RegistryObject<Block> MOON_LOG = registerBlock("moon_log",
             () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_TAB);

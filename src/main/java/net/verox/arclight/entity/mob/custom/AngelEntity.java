@@ -138,7 +138,7 @@ public class AngelEntity extends FlyingMob implements IAnimatable, Enemy {
 
     protected void defineSynchedData() {
         super.defineSynchedData();
-        this.entityData.define(ID_SIZE, 2);
+        this.entityData.define(ID_SIZE, 1);
     }
 
     public void setAngelSize(int p_33109_) {
@@ -200,7 +200,7 @@ public class AngelEntity extends FlyingMob implements IAnimatable, Enemy {
 
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_33126_, DifficultyInstance p_33127_, MobSpawnType p_33128_, @Nullable SpawnGroupData p_33129_, @Nullable CompoundTag p_33130_) {
         this.anchorPoint = this.blockPosition().above(5);
-        this.setAngelSize(3);
+        this.setAngelSize(1);
         return super.finalizeSpawn(p_33126_, p_33127_, p_33128_, p_33129_, p_33130_);
     }
 
@@ -248,7 +248,7 @@ public class AngelEntity extends FlyingMob implements IAnimatable, Enemy {
     public EntityDimensions getDimensions(Pose p_33113_) {
         int i = this.getAngelSize();
         EntityDimensions entitydimensions = super.getDimensions(p_33113_);
-        float f = (entitydimensions.width + 4.2F * (float)i) / entitydimensions.width;
+        float f = (entitydimensions.width + 1.0F * (float)i) / entitydimensions.width;
         return entitydimensions.scale(f);
     }
 
